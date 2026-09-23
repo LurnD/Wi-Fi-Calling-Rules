@@ -9,7 +9,8 @@
     body { max-width: 36rem; margin: 0 auto; padding: 2rem 1.25rem; line-height: 1.6; }
     h1 { font-size: 1.55rem; }
     .card { border: 1px solid #9996; border-radius: 12px; padding: 1.1rem; margin: 1rem 0; }
-    .button { display: inline-block; border-radius: 8px; padding: .7rem 1rem; background: #1677db; color: white; text-decoration: none; font-weight: 600; }
+    .button { display: inline-block; border-radius: 8px; padding: .7rem 1rem; margin: .2rem .3rem .2rem 0; background: #1677db; color: white; text-decoration: none; font-weight: 600; }
+    .button.module { background: #178052; }
     .button:focus-visible { outline: 3px solid #f90; outline-offset: 3px; }
     .raw { display: block; margin-top: .8rem; overflow-wrap: anywhere; font-size: .85rem; }
     .hint { color: #666; }
@@ -18,26 +19,35 @@
 </head>
 <body>
   <h1>导入 Shadowrocket 配置</h1>
-  <p>请在装有 Shadowrocket 的 iPhone 上用 Safari 打开本页，再点对应的蓝色按钮。出现系统提示时选择「打开」。如果当前在 GitHub App 或其他 App 的内置浏览器里，请先选择「在 Safari 中打开」。</p>
+  <p>请在装有 Shadowrocket 的 iPhone 上用 Safari 打开本页，再点对应按钮。绿色按钮将规则模块加入现有配置；蓝色按钮导入独立配置。出现系统提示时选择「打开」。如果当前在 GitHub App 或其他 App 的内置浏览器里，请先选择「在 Safari 中打开」。</p>
 
   <section class="card" id="telekom-de">
     <h2>Telekom DE</h2>
-    <a class="button" href="shadowrocket://config/add/https://raw.githubusercontent.com/LurnD/Wi-Fi-Calling-Rules/main/configs/telekom-de.conf">在 Shadowrocket 中导入</a>
-    <a class="raw" href="https://raw.githubusercontent.com/LurnD/Wi-Fi-Calling-Rules/main/configs/telekom-de.conf">配置文件 Raw URL</a>
+    <a class="button module" href="shadowrocket://install?module=https://raw.githubusercontent.com/LurnD/Wi-Fi-Calling-Rules/main/modules/telekom-de.module">订阅规则模块</a>
+    <a class="button" href="shadowrocket://config/add/https://raw.githubusercontent.com/LurnD/Wi-Fi-Calling-Rules/main/configs/telekom-de.conf">导入独立配置</a>
+    <a class="raw" href="https://raw.githubusercontent.com/LurnD/Wi-Fi-Calling-Rules/main/rules/telekom-de.list">规则集 Raw URL</a>
+    <a class="raw" href="https://raw.githubusercontent.com/LurnD/Wi-Fi-Calling-Rules/main/modules/telekom-de.module">模块 Raw URL</a>
+    <a class="raw" href="https://raw.githubusercontent.com/LurnD/Wi-Fi-Calling-Rules/main/configs/telekom-de.conf">独立配置 Raw URL</a>
   </section>
 
   <section class="card" id="ultra-tmobile-us">
     <h2>Ultra Mobile / T-Mobile US</h2>
-    <a class="button" href="shadowrocket://config/add/https://raw.githubusercontent.com/LurnD/Wi-Fi-Calling-Rules/main/configs/ultra-tmobile-us.conf">在 Shadowrocket 中导入</a>
-    <a class="raw" href="https://raw.githubusercontent.com/LurnD/Wi-Fi-Calling-Rules/main/configs/ultra-tmobile-us.conf">配置文件 Raw URL</a>
+    <a class="button module" href="shadowrocket://install?module=https://raw.githubusercontent.com/LurnD/Wi-Fi-Calling-Rules/main/modules/ultra-tmobile-us.module">订阅规则模块</a>
+    <a class="button" href="shadowrocket://config/add/https://raw.githubusercontent.com/LurnD/Wi-Fi-Calling-Rules/main/configs/ultra-tmobile-us.conf">导入独立配置</a>
+    <a class="raw" href="https://raw.githubusercontent.com/LurnD/Wi-Fi-Calling-Rules/main/rules/ultra-tmobile-us.list">规则集 Raw URL</a>
+    <a class="raw" href="https://raw.githubusercontent.com/LurnD/Wi-Fi-Calling-Rules/main/modules/ultra-tmobile-us.module">模块 Raw URL</a>
+    <a class="raw" href="https://raw.githubusercontent.com/LurnD/Wi-Fi-Calling-Rules/main/configs/ultra-tmobile-us.conf">独立配置 Raw URL</a>
   </section>
 
   <section class="card" id="voxi-vodafone-uk">
     <h2>VOXI / Vodafone UK</h2>
-    <a class="button" href="shadowrocket://config/add/https://raw.githubusercontent.com/LurnD/Wi-Fi-Calling-Rules/main/configs/voxi-vodafone-uk.conf">在 Shadowrocket 中导入</a>
-    <a class="raw" href="https://raw.githubusercontent.com/LurnD/Wi-Fi-Calling-Rules/main/configs/voxi-vodafone-uk.conf">配置文件 Raw URL</a>
+    <a class="button module" href="shadowrocket://install?module=https://raw.githubusercontent.com/LurnD/Wi-Fi-Calling-Rules/main/modules/voxi-vodafone-uk.module">订阅规则模块</a>
+    <a class="button" href="shadowrocket://config/add/https://raw.githubusercontent.com/LurnD/Wi-Fi-Calling-Rules/main/configs/voxi-vodafone-uk.conf">导入独立配置</a>
+    <a class="raw" href="https://raw.githubusercontent.com/LurnD/Wi-Fi-Calling-Rules/main/rules/voxi-vodafone-uk.list">规则集 Raw URL</a>
+    <a class="raw" href="https://raw.githubusercontent.com/LurnD/Wi-Fi-Calling-Rules/main/modules/voxi-vodafone-uk.module">模块 Raw URL</a>
+    <a class="raw" href="https://raw.githubusercontent.com/LurnD/Wi-Fi-Calling-Rules/main/configs/voxi-vodafone-uk.conf">独立配置 Raw URL</a>
   </section>
 
-  <p class="hint">如果系统没有唤起 Shadowrocket，请复制上方对应的 Raw URL，在 Shadowrocket「配置」页右上角点「+」下载。导入后还需点选「使用配置」。</p>
+  <p class="hint">若绿色按钮没有唤起 App，可复制模块 Raw URL，在 Shadowrocket「配置 → 模块 → +」中下载。若蓝色按钮没有唤起 App，可复制独立配置 Raw URL，在「配置」页右上角点「+」下载。独立配置导入后还需点选「使用配置」。</p>
 </body>
 </html>

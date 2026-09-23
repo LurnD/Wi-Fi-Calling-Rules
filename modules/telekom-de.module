@@ -1,0 +1,10 @@
+#!name=Wi-Fi Calling - Telekom DE
+#!desc=Telekom DE Wi-Fi Calling 分流；匹配流量使用当前代理节点
+
+[Rule]
+DOMAIN-SUFFIX,telekom.de,PROXY
+DOMAIN-SUFFIX,telekom.com,PROXY
+DOMAIN-SUFFIX,t-mobile.de,PROXY
+DOMAIN-SUFFIX,prod.con-telekom.de,PROXY
+DOMAIN-SUFFIX,wlan-call.t-mobile.de,PROXY
+DOMAIN-SUFFIX,mcc262.pub.3gppnetwork.org,PROXY
