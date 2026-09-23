@@ -8,7 +8,7 @@
 
 在安装了 Shadowrocket 的 iPhone 上用 Safari 打开对应的导入页，再点击页内「在 Shadowrocket 中导入」按钮。GitHub 的 README 会过滤 `shadowrocket://` 直连，因此这里先打开由本仓库托管的导入页。配置里的匹配流量使用当前选中的代理节点（`PROXY`），其他流量直连（`FINAL,DIRECT`）。三个配置是**分别使用**的，导入后选择其中一份启用；如果需要同时使用多家运营商，请把下方规则集合并进自己的配置。
 
-| 运营商 | 一键导入 | 配置文件 | 规则集 |
+| 运营商 | 导入入口 | 配置文件 | 规则集 |
 | --- | --- | --- | --- |
 | Telekom DE | [打开 Telekom DE 导入页](https://lurnd.github.io/Wi-Fi-Calling-Rules/#telekom-de) | [telekom-de.conf](configs/telekom-de.conf) | [telekom-de.list](rules/telekom-de.list) |
 | Ultra Mobile / T-Mobile US | [打开 Ultra Mobile / T-Mobile US 导入页](https://lurnd.github.io/Wi-Fi-Calling-Rules/#ultra-tmobile-us) | [ultra-tmobile-us.conf](configs/ultra-tmobile-us.conf) | [ultra-tmobile-us.list](rules/ultra-tmobile-us.list) |
