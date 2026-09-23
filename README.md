@@ -2,7 +2,7 @@
 
 根据 [NodeSeek 原帖](https://www.nodeseek.com/post-905571-1) 中的域名和 IP 段整理，分别提供 Telekom DE、Ultra Mobile / T-Mobile US、VOXI / Vodafone UK 的 Shadowrocket 规则集与独立配置。
 
-> **使用前提：** 一键导入从 GitHub 仓库 `LurnD/Wi-Fi-Calling-Rules` 的 `main` 分支下载配置文件。文件发布到该分支后，按钮才可用。
+> **使用前提：** 一键导入从 GitHub 仓库 `LurnD/Wi-Fi-Calling-Rules` 的 `main` 分支下载配置文件。更新规则后请将改动推送到该分支。
 
 ## 一键导入独立配置
 
